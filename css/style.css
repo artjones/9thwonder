@@ -14,10 +14,6 @@
 /* ================================
    GLOBAL RESET + BASE
 ================================ */
-body {
-  outline: 10px solid red !important;
-}
-
 * {
   margin: 0;
   padding: 0;
