@@ -80,6 +80,28 @@ body {
 section {
   background: transparent;
 }
+/* ================================
+   GLOBAL CONTAINER SYSTEM
+================================ */
+
+.container {
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+
+.container--narrow {
+  max-width: 720px;
+}
+
+.container--standard {
+  max-width: 900px;
+}
+
+.container--wide {
+  max-width: 1320px;
+}
 
 /* ================================
    HEADER + NAV — STRUCTURAL LAYOUT
@@ -160,7 +182,6 @@ section {
 }
 
 .hero-inner {
-  max-width: 900px;
   padding: 0 24px;
 }
 
@@ -189,7 +210,6 @@ section {
   background: rgba(255,255,255,0.02);
 }
 .philosophy-inner {
-  max-width: 720px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -262,7 +282,6 @@ section {
 }
 
 .page-intro-inner {
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -307,7 +326,6 @@ section {
 }
 
 .artist-grid-inner {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -487,7 +505,6 @@ a:hover {
 }
 
 .footer-inner {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 32px 24px;
 }
