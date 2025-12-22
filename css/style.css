@@ -1,0 +1,418 @@
+/* ================================
+   HOMEPAGE STYLES
+================================ */
+
+/* Header Refinement */
+.site-header {
+  border-bottom: 1px solid rgba(244,241,236,0.08);
+}
+
+.wordmark {
+  text-decoration: none;
+  color: var(--bone);
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 900px;
+  padding: 0 24px;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  max-width: 560px;
+  opacity: 0.85;
+}
+
+/* Philosophy */
+.philosophy {
+  padding: 120px 24px;
+  background: rgba(255,255,255,0.02);
+}
+
+.philosophy-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.philosophy-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 48px;
+}
+
+.philosophy-list li {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* Location */
+.location {
+  padding: 96px 24px;
+}
+
+.location-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.location p {
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(244,241,236,0.08);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.page-intro {
+  padding: 120px 24px 72px;
+}
+
+.page-intro-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-intro h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.intro-lead {
+  font-size: 1.15rem;
+  max-width: 600px;
+  opacity: 0.85;
+}
+
+/* Manifesto */
+.manifesto {
+  padding: 72px 24px;
+}
+
+.manifesto-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.manifesto p {
+  margin-bottom: 32px;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Values */
+.values {
+  padding: 96px 24px 120px;
+  background: rgba(255,255,255,0.02);
+}
+
+.values-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.values-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 48px;
+}
+
+.values-list li {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+/* ================================
+   ARTISTS
+================================ */
+
+/* Artist Grid */
+.artist-grid {
+  padding: 96px 24px 120px;
+}
+
+.artist-grid-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 48px;
+}
+
+.artist-card a {
+  text-decoration: none;
+  color: var(--bone);
+}
+
+.artist-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: rgba(255,255,255,0.05);
+  margin-bottom: 16px;
+}
+
+.artist-card h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.artist-card p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  letter-spacing: 0.06em;
+}
+
+/* Individual Artist Page */
+.artist-intro {
+  padding: 120px 24px 72px;
+}
+
+.artist-intro-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.artist-statement {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.artist-portfolio {
+  padding: 72px 24px 120px;
+}
+
+.artist-portfolio-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.portfolio-item {
+  aspect-ratio: 1 / 1;
+  background: rgba(255,255,255,0.05);
+}
+/* ================================
+   STUDIO PAGE
+================================ */
+
+.studio-philosophy {
+  padding: 72px 24px;
+}
+
+.studio-philosophy-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.studio-philosophy p {
+  margin-bottom: 32px;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Workflow */
+.studio-workflow {
+  padding: 96px 24px;
+  background: rgba(255,255,255,0.02);
+}
+
+.studio-workflow-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.studio-workflow h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.workflow-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 48px;
+}
+
+.workflow-list li {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* Location */
+.studio-location {
+  padding: 96px 24px 120px;
+}
+
+.studio-location-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.studio-location p {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.location-context {
+  text-transform: none;
+  letter-spacing: normal;
+  opacity: 0.75;
+}
+/* ================================
+   CONTACT PAGE
+================================ */
+
+.booking-info,
+.general-contact,
+.contact-location {
+  padding: 72px 24px;
+}
+
+.booking-info-inner,
+.general-contact-inner,
+.contact-location-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.booking-info h2,
+.general-contact h2,
+.contact-location h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.booking-info p,
+.general-contact p,
+.contact-location p {
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.contact-email a {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bone);
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  color: var(--teal);
+}
+/* ================================
+   EVENTS / CULTURE PAGE
+================================ */
+
+.events-philosophy {
+  padding: 72px 24px;
+}
+
+.events-philosophy-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.events-philosophy p {
+  margin-bottom: 32px;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Event Types */
+.event-types {
+  padding: 96px 24px;
+  background: rgba(255,255,255,0.02);
+}
+
+.event-types-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.event-types-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 48px;
+}
+
+.event-types-list li {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* Archive */
+.event-archive {
+  padding: 96px 24px 120px;
+}
+
+.event-archive-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.event-archive-inner p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+
