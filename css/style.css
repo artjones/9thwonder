@@ -172,6 +172,21 @@ section {
 }
 
 /* ================================
+   NAV LOGO
+================================ */
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 28px; /* key number */
+  width: auto;
+  display: block;
+}
+
+/* ================================
    HERO (HOME)
 ================================ */
 
