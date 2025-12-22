@@ -119,10 +119,10 @@ section {
 
 /* Centered internal grid */
 .header-inner {
+  align-items: center;
   max-width: 1320px;
   margin: 0 auto;
   padding: 20px 32px;
-
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -178,10 +178,11 @@ section {
 .nav-logo-link {
   display: flex;
   align-items: center;
+  padding-top: 1px; /* micro optical correction */
 }
 
 .nav-logo {
-  height: 28px; /* key number */
+  height: 20px;
   width: auto;
   display: block;
 }
