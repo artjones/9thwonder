@@ -125,7 +125,6 @@ section {
   padding: 20px 32px;
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
 }
 
 /* Brand / wordmark */
