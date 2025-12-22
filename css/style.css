@@ -176,14 +176,11 @@ section {
 ================================ */
 
 .hero {
-  min-height: calc(100vh - 96px); /* accounts for header */
+  min-height: calc(100vh - 96px);
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   padding-top: 96px;
-}
-
-.hero-inner {
-  padding: 0 24px;
 }
 
 .hero h1 {
