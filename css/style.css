@@ -73,12 +73,15 @@
 
 body {
   font-family: var(--font-brand), -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--black);
+  color: var(--offwhite);
 }
 
 
 section {
   background: transparent;
 }
+
 
 /* ================================
    HEADER + NAV
@@ -135,22 +138,17 @@ section {
    PHILOSOPHY / VALUES / SHARED
 ================================ */
 
-.philosophy,
 .values,
 .studio-workflow,
 .event-types {
   padding: 96px 24px;
   background: rgba(255,255,255,0.02);
 }
-
-.philosophy-inner,
-.values-inner,
-.studio-workflow-inner,
-.event-types-inner {
-  max-width: 900px;
+.philosophy-inner {
+  max-width: 720px;
   margin: 0 auto;
+  padding: 0 24px;
 }
-
 .philosophy-list,
 .values-list,
 .workflow-list,
@@ -170,6 +168,46 @@ section {
   text-transform: uppercase;
   opacity: 0.9;
 }
+/* ================================
+   PHILOSOPHY / HOMAGE
+================================ */
+
+.philosophy {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(244,241,236,0.08);
+}
+
+.philosophy-title {
+  font-size: 0.85rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.philosophy-text {
+  max-width: 720px;
+}
+
+.philosophy-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--offwhite);
+}
+
+.philosophy-close {
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+.philosophy-signature {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
 
 /* ================================
    PAGE INTRO (ABOUT / ETC)
