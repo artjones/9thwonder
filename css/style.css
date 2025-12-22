@@ -41,6 +41,8 @@
 }
 .wordmark {
   font-family: var(--font-brand);
+  color: var(--offwhite);
+  text-decoration: none;
   font-size: 1rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -70,11 +72,9 @@
 }
 
 body {
-  background: var(--black);
-  color: var(--offwhite);
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-brand), -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
 
 section {
   background: transparent;
@@ -87,14 +87,6 @@ section {
 .site-header {
   background: var(--black);
   border-bottom: 1px solid rgba(244,241,236,0.08);
-}
-
-.wordmark {
-  color: var(--offwhite);
-  text-decoration: none;
-  font-size: 1.1rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
 }
 
 .site-nav a {
