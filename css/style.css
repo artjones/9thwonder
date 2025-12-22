@@ -176,9 +176,10 @@ section {
 ================================ */
 
 .hero {
-  min-height: 85vh;
+  min-height: calc(100vh - 96px); /* accounts for header */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 96px;
 }
 
 .hero-inner {
