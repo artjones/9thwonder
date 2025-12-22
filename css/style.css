@@ -189,17 +189,17 @@ section {
 
 /* Logo */
 .hero-logo {
-  width: clamp(300px, 42vw, 560px);
+  width: clamp(340px, 48vw, 620px);
   height: auto;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 /* Tagline */
 .hero-tagline {
   max-width: 420px;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 /* ================================
