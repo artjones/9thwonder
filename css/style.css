@@ -71,84 +71,81 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 body {
-  font-family: var(--font-brand), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   background: var(--black);
   color: var(--offwhite);
 }
-
 
 section {
   background: transparent;
 }
 
+/* ================================
+   HEADER + NAV — STRUCTURAL LAYOUT
+================================ */
+
 .site-header {
   width: 100%;
+  background: var(--black);
+  border-bottom: 1px solid rgba(244,241,236,0.08);
 }
 
+.site-nav {
+  padding-left: 64px;
+}
+
+/* Centered internal grid */
 .header-inner {
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 20px 32px;
+
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
 
-section {
-  width: 100%;
+/* Brand / wordmark */
+.brand {
+  display: flex;
+  align-items: center;
 }
 
-section > .container {
-  display: block;
+.wordmark {
+  font-family: var(--font-brand);
+  color: var(--offwhite);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  white-space: nowrap;
 }
 
-/* NAV BAR */
+/* Navigation */
 .site-nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+
   margin: 0;
   padding: 0;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 48px;
-  justify-items: center;
-}
-
-.container {
-  text-align: left;
-}
-
-/* ================================
-   HEADER + NAV
-================================ */
-
-.site-header {
-  background: var(--black);
-  border-bottom: 1px solid rgba(244,241,236,0.08);
-}
-
+/* Nav links */
 .site-nav a {
+  font-family: var(--font-accent);
   color: var(--offwhite);
   text-decoration: none;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
+  opacity: 1;
   color: var(--teal);
 }
 
@@ -241,11 +238,6 @@ section > .container {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--offwhite);
-}
-
-.philosophy-text p,
-.manifesto p {
-  color: rgba(244,241,236,0.92);
 }
 
 .philosophy-close {
