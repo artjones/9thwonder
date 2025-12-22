@@ -71,6 +71,12 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 body {
   font-family: var(--font-brand), -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--black);
@@ -82,6 +88,47 @@ section {
   background: transparent;
 }
 
+.site-header {
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+
+section > .container {
+  display: block;
+}
+
+/* NAV BAR */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 48px;
+  justify-items: center;
+}
+
+.container {
+  text-align: left;
+}
 
 /* ================================
    HEADER + NAV
@@ -194,6 +241,11 @@ section {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--offwhite);
+}
+
+.philosophy-text p,
+.manifesto p {
+  color: rgba(244,241,236,0.92);
 }
 
 .philosophy-close {
