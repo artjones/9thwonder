@@ -184,7 +184,7 @@ section {
   height: 24px;
   width: auto;
   display: block;
-  transform: translateY(1px);
+  transform: translateY(-1px);
 }
 
 /* ================================
