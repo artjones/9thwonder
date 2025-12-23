@@ -55,22 +55,27 @@
     </section>
 
     <!-- BOOKING INFO -->
-    <section class="booking-info">
-      <div class="booking-info-inner">
+ <form id="booking-form">
+  <input type="text" name="name" placeholder="Your Name" required>
 
-        <h2>Booking</h2>
+  <input type="email" name="email" placeholder="Your Email" required>
 
-        <p>
-          To book an appointment, please contact the artist you wish to work with directly.
-          Each artist manages their own schedule, pricing, and booking process.
-        </p>
+  <select name="artist" required>
+    <option value="">Preferred Artist</option>
+    <option value="No Preference">No Preference</option>
+    <option value="Turtle">Turtle</option>
+    <option value="James">James</option>
+  </select>
 
-        <p>
-          Artist contact information can be found on individual artist pages.
-        </p>
+  <textarea name="message" placeholder="Describe your idea, placement, and size" required></textarea>
 
-      </div>
-    </section>
+  <!-- Honeypot -->
+  <input type="text" name="company" style="display:none">
+
+  <button type="submit">Submit Request</button>
+
+  <p id="form-status" class="form-status"></p>
+</form>
 
     <!-- GENERAL CONTACT -->
     <section class="general-contact">
@@ -83,7 +88,7 @@
         </p>
 
         <p class="contact-email">
-          <a href="mailto:info@9thwondertattoo.com">info@9thwondertattoo.com</a>
+		<a href="mailto:info@9thwonder.online">info@9thwonder.online</a>
         </p>
 
       </div>
@@ -103,7 +108,43 @@
 
       </div>
     </section>
+<script>
+document.getElementById("booking-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
 
+  const form = e.target;
+  const status = document.getElementById("form-status");
+
+  status.textContent = "Sending request…";
+
+  const data = {
+    name: form.name.value.trim(),
+    email: form.email.value.trim(),
+    artist: form.artist.value,
+    message: form.message.value.trim(),
+    company: form.company.value
+  };
+
+  try {
+    const res = await fetch("https://YOUR-BACKEND-URL/book", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      status.textContent = "Request sent. We'll be in touch shortly.";
+      form.reset();
+    } else {
+      status.textContent = "Something went wrong. Please try again.";
+    }
+  } catch (err) {
+    status.textContent = "Network error. Please try again later.";
+  }
+});
+</script>
   </main>
 
   <!-- =========================
