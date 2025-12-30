@@ -126,12 +126,11 @@ document.getElementById("booking-form").addEventListener("submit", async functio
   };
 
   try {
-    const res = await fetch("https://YOUR-BACKEND-URL/book", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
+    const res = await fetch("https://booking.9thwonder.online/book", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(data)
+});
     const result = await res.json();
 
     if (result.success) {
