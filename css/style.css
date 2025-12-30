@@ -147,7 +147,7 @@ section {
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 72px;
+  gap: 80px;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -158,10 +158,12 @@ section {
   font-family: var(--font-accent);
   color: var(--offwhite);
   text-decoration: none;
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
+
+  font-size: 0.95rem;          /* ↑ from 0.75rem */
+  letter-spacing: 0.14em;      /* ↓ slightly to balance size */
   text-transform: uppercase;
-  opacity: 0.85;
+
+  opacity: 0.9;
   transition: opacity 0.2s ease, color 0.2s ease;
 }
 
