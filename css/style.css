@@ -147,7 +147,7 @@ section {
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 80px;
+  gap: 40px;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -158,11 +158,9 @@ section {
   font-family: var(--font-accent);
   color: var(--offwhite);
   text-decoration: none;
-
   font-size: 0.95rem;          /* ↑ from 0.75rem */
-  letter-spacing: 0.14em;      /* ↓ slightly to balance size */
+  letter-spacing: 0.18em;      /* ↓ slightly to balance size */
   text-transform: uppercase;
-
   opacity: 0.9;
   transition: opacity 0.2s ease, color 0.2s ease;
 }
@@ -184,7 +182,7 @@ section {
 }
 
 .nav-logo {
-  height: 24px;
+  height: 48px;
   width: auto;
   display: block;
   transform: translateY(-1px);
@@ -195,9 +193,10 @@ section {
 ================================ */
 
 .hero {
-  min-height: calc(100vh - 96px);
+  min-height: 85vh;
   display: flex;
   align-items: center;
+  padding-top: 72px;
 }
 
 .hero-logo-wrap {
@@ -209,9 +208,9 @@ section {
 
 /* Logo */
 .hero-logo {
-  width: clamp(320px, 42vw, 520px);
+  width: clamp(420px, 55vw, 780px);
   height: auto;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 /* Tagline */
@@ -284,7 +283,7 @@ section {
 ================================ */
 
 .philosophy {
-  padding: 6rem 0;
+  padding: 4.5rem 0;
   border-top: 1px solid rgba(244,241,236,0.08);
 }
 
