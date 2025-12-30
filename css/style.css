@@ -254,9 +254,12 @@ section {
   background: rgba(255,255,255,0.02);
 }
 .philosophy-inner {
+  max-width: 720px;
   margin: 0 auto;
   padding: 0 24px;
+  text-align: center;
 }
+
 .philosophy-list,
 .values-list,
 .workflow-list,
@@ -466,6 +469,24 @@ section {
   opacity: 0.75;
 }
 
+.location {
+  padding: 96px 24px;
+  border-top: 1px solid rgba(244,241,236,0.08);
+}
+
+.location-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.location-inner p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+
 /* ================================
    CONTACT
 ================================ */
@@ -546,6 +567,7 @@ a:hover {
   background: var(--black);
   border-top: 1px solid rgba(244,241,236,0.08);
   color: var(--muted);
+  text-align: center;
 }
 
 .footer-inner {
